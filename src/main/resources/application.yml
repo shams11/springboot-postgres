@@ -1,0 +1,14 @@
+server:
+  port: 8090
+
+spring:
+  jpa:
+    show-sql: true
+    generate-ddl: true
+
+    datasource.hikari: #HikariCP connection Pool
+      pool-name: auto-supplier
+      connection-timeout: 60000  # Default: 30000 (30 seconds)
+      maximum-pool-size: 5
+
+  datasource.platform: hsqldb
